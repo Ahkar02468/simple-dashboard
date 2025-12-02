@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 id="site-name"></h1>
+            <p id="date"></p>
+        </header>
+        <main>
+            <div class="kpis">
+                <div class="kpi-card">
+                    <h2>Total Tickets</h2>
+                    <p id="total-tickets"></p>
+                </div>
+                <div class="kpi-card">
+                    <h2>Open Tickets</h2>
+                    <p id="open-tickets"></p>
+                </div>
+                <div class="kpi-card">
+                    <h2>Avg. Resolution Time</h2>
+                    <p id="avg-resolution-time"></p>
+                </div>
+                <div class="kpi-card">
+                    <h2>MTTR</h2>
+                    <p id="mttr"></p>
+                </div>
+                <div class="kpi-card">
+                    <h2>Uptime</h2>
+                    <p id="uptime"></p>
+                </div>
+            </div>
+            <div class="charts">
+                <div class="chart-container">
+                    <h2>Open Tickets by Department</h2>
+                    <ul id="open-tickets-by-department"></ul>
+                </div>
+                <div class="chart-container">
+                    <h2>Fuel Information</h2>
+                    <dl id="fuel-info">
+                        <div>
+                            <dt>Consumed</dt>
+                            <dd><span id="fuel-consumed"></span>L</dd>
+                        </div>
+                        <div>
+                            <dt>Capacity</dt>
+                            <dd><span id="fuel-capacity"></span>L</dd>
+                        </div>
+                        <div>
+                            <dt>Prediction (next 30 days)</dt>
+                            <dd><span id="fuel-prediction"></span>L</dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+            <br />
+            <div class="chart-container">
+                <h2>MTTR History</h2>
+                <canvas id="mttr-history-chart" role="img"
+                    aria-label="Bar chart showing MTTR history for the last 7 days">
+                    <p>A bar chart showing the Mean Time to Resolution (MTTR) history over the past seven days.</p>
+                </canvas>
+            </div>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
