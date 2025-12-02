@@ -2,7 +2,7 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const DATA_FILE_PATH = path.join(__dirname, 'api', 'dashboard', 'data.json');
 
 const server = http.createServer((req, res) => {
@@ -28,5 +28,5 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}/api/dashboard`);
+    console.log(`Server is running on ${PORT}`);
 });
