@@ -1,5 +1,5 @@
 ## How to run the test locally
-**Clone the  repo**
+**Clone this repo - https://github.com/Ahkar02468/simple-dashboard.git**
 - go to backend folder and open in terminal
 - npm start
 -----
