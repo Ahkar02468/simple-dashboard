@@ -53,9 +53,9 @@ function renderMttrHistoryChart(mttrHistory) {
             datasets: [{
                 label: 'MTTR',
                 data: data,
-                borderColor: 'rgba(75, 192, 192, 1)',
-                backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                borderWidth: 1
+                borderColor: 'rgba(42, 207, 55, 1)',
+                backgroundColor: 'rgba(221, 101, 32, 0.2)',
+                borderWidth: 2
             }]
         },
         options: {
